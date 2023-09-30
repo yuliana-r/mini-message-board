@@ -1,10 +1,13 @@
 # Mini message board
 ## Introduction 
 
+This project is a simple message board app that allows users to post messages on the board.
+
+This project demonstrates use of the ExpressJS framework.
 
 ## Preview
 
-<!-- [![Mini message board](./src/assets/demo.png)](https://tiny-talkies.netlify.app/) -->
+<!-- [![Mini message board](./public/images/demo.png)](https://tiny-talkies.netlify.app/) -->
 
 ## Media & assets credits:
 
