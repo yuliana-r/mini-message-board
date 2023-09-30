@@ -3,8 +3,6 @@ const charCount = document.getElementById("charCount");
 
 const maxCount = 250;
 
-console.log("Script loaded");
-
 textarea.addEventListener("input", function updateCharCount() {
     const currCount = textarea.value.length;
     charCount.textContent = currCount;

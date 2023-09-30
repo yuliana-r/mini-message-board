@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  background-image: url('../images/background1.jpg');
+  background-image: url('../images/background.jpg');
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -22,6 +22,8 @@ body {
   min-width: 350px;
 }
 
+/* Header */
+
 header {
   display: flex;
   flex-direction: column;
@@ -29,15 +31,15 @@ header {
   align-items: center;
   position: fixed;
   margin-top: 0;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
   padding: 0.75em;
-  color: #5d5d5d;
+  color: #ffffff;
   text-align: center;
   flex-wrap: nowrap;
   min-width: inherit;
   pointer-events: none;
-  border-bottom: 2px solid #F2BA1D;
+  border-bottom: 2px solid #000000;
 }
 
 .display {
@@ -46,11 +48,11 @@ header {
 
 .handwritten {
   font-family: 'Sacramento', cursive;
-  color: #E83A47;
+  color: #ffffff;
 }
 
 .header-title {
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: 800;
 }
 
@@ -61,6 +63,18 @@ header {
 .fa-comments {
   color: #F2BA1D;
 }
+
+/* Main */
+
+main {
+  margin-top: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Buttons */
 
 .add-button {
   background-color: #E83A47;
@@ -79,25 +93,15 @@ header {
   gap: 5px;
   letter-spacing: 2px;
   position: fixed;
-  bottom: 25px;
+  bottom: 40px;
   right: 0;
 }
-
-/*55D187*/
 
 .add-button:hover,
 .back-button:hover,
 .post-button:hover {
   scale: 1.05;
   filter: saturate(1.25);
-}
-
-main {
-  margin-top: 140px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .back-button,
@@ -116,14 +120,22 @@ main {
   font-weight: 600;
 }
 
-.form-container {
+.post-button {
+  background-color: #F2BA1D;
+  color: #ffffff;
+  border: 1px solid #daa71a;
+  padding: 0.5em 2em;
+  width: 65%;
+  cursor: grab;
+  font-size: 1em;
+  font-weight: 600;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 0.5em;
-  width: 100%;
+  justify-content: center;
+  gap: 5px;
 }
+
+/* Form */
 
 form {
   display: flex;
@@ -138,19 +150,13 @@ form {
   margin: 1em;
 }
 
-.post-button {
-  background-color: #F2BA1D;
-  color: #ffffff;
-  border: 1px solid #daa71a;
-  padding: 0.5em 2em;
-  width: 65%;
-  cursor: grab;
-  font-size: 1em;
-  font-weight: 600;
+.form-container {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  gap: 5px;
+  align-items: center;
+  gap: 0.5em;
+  width: 100%;
 }
 
 textarea {
@@ -191,13 +197,15 @@ label {
   gap: 10px;
 }
 
+/* Messages display */
+
 .messages-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: 2em;
   padding: 2em;
-  width: 80%;
+  width: 90%;
   flex-wrap: wrap;
   gap: 2em;
 }
@@ -208,6 +216,7 @@ label {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  min-width: 325px;
   width: 325px;
   height: 275px;
   font-family: 'Montserrat', sans-serif;
@@ -228,7 +237,7 @@ label {
   font-size: 1.25em;
   align-self: flex-start;
   word-break: break-all;
-  color: #36A5F7;
+  color: #E83A47;
   font-weight: 600;
 
 }
@@ -246,22 +255,24 @@ label {
   font-style: italic;
 }
 
+/* Footer */
 
 footer {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
-  color: #545454;
+  color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'Sacramento', cursive;
   font-size: 2em;
   gap: 10px;
+  border-top: 1px solid #000000;
 }
 
 .fa-github {
   font-size: 20px;
-  color: #E83A47;
+  color: #F2BA1D;
   transition: transform 0.3s ease-in-out;
 }
 
