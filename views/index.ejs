@@ -15,9 +15,9 @@
       <div class="messages-container">
         <% messages.forEach(function(message) { %>
           <div class="message">
-            <strong>User:</strong> <%= message.user %><br>
-                <strong>Text:</strong> <%= message.text %><br>
-                <strong>Date:</strong> <%= message.added.toDateString() %>
+            <p class="message-header"><%= message.user %> <span class="cursive-span">said...</span></p>
+            <p class="message-body"><%= message.text %></p>
+            <p class="message-date"><%= message.added.toDateString() %></p>
           </div>
                 
         <% }); %>
