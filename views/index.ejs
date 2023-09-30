@@ -4,10 +4,21 @@
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/index.css' />
     <link rel="icon" href="/images/icon.ico">
+    <script src="https://kit.fontawesome.com/f5ed9082ee.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-    <p>Leave a message!</p>
+    <header>
+      <h1 class="display header-title"><i class="fa-solid fa-comments"></i> <%= title %></h1>
+      <p class="handwritten header-message">leave a message...</p>
+    </header>
+    <main>
+      <button class="add-button">
+        <i class="fa-solid fa-comment-dots"></i>
+      </button>
+    </main>
+    <footer><a href="https://github.com/yuliana-r/mini-message-board" target="_blank">
+      <i class="fab fa-github" aria-hidden="true"></i
+    ></a>
+    <p> yuliana-r</p></footer>
   </body>
 </html>

@@ -10,4 +10,4 @@
 
 1. Flaticon (juicy_fish): https://www.flaticon.com/free-icons/messages
 
-2. Freepik (user21574432): https://www.freepik.com/premium-vector/paper-airplane-vector-seamless-pattern-doodle-outline-style-paper-airplane-background_23531683.htm 
+2. Freepik (user21574432): https://www.freepik.com/premium-vector/paper-airplane-vector-seamless-pattern-doodle-outline-style-paper-airplane-background-simple-origami-aircraft-seamless-pattern-drawing-doodle-vector-illustration_24318503.htm
