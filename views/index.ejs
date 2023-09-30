@@ -12,13 +12,26 @@
       <p class="handwritten header-message">leave a message...</p>
     </header>
     <main>
-      <button class="add-button">
-        <i class="fa-solid fa-comment-dots"></i>
-      </button>
+      <div class="messages-container">
+        <% messages.forEach(function(message) { %>
+          <div class="message">
+            <strong>User:</strong> <%= message.user %><br>
+                <strong>Text:</strong> <%= message.text %><br>
+                <strong>Date:</strong> <%= message.added.toDateString() %>
+          </div>
+                
+        <% }); %>
+      </div>
+      <a href="/new">
+        <button class="add-button">
+          <i class="fa-solid fa-comment-dots"></i>
+        </button>
+      </a>
     </main>
     <footer><a href="https://github.com/yuliana-r/mini-message-board" target="_blank">
       <i class="fab fa-github" aria-hidden="true"></i
     ></a>
     <p> yuliana-r</p></footer>
+    
   </body>
 </html>

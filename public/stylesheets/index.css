@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  background-image: url('../images/background.avif');
+  background-image: url('../images/background1.jpg');
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -45,7 +45,7 @@ header {
 
 .handwritten {
   font-family: 'Sacramento', cursive;
-  color: #4AAA71;
+  color: #E83A47;
 }
 
 .header-title {
@@ -57,10 +57,14 @@ header {
   font-size: 2.5em;
 }
 
+.fa-comments {
+  color: #F2BA1D;
+}
+
 .add-button {
-  background-color: #36A5F7;
+  background-color: #E83A47;
   color: #ffffff;
-  border: 1px solid #5d5d5d;
+  border: 1px solid #8b232b;
   border-radius: 50px;
   padding: 0.5em;
   font-weight: 700;
@@ -80,13 +84,106 @@ header {
 
 /*55D187*/
 
-.add-button:hover {
+.add-button:hover,
+.back-button:hover,
+.post-button:hover {
   scale: 1.05;
   filter: saturate(1.25);
 }
 
 main {
   margin-top: 140px;
+}
+
+.back-button,
+.post-button {
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 5px;
+}
+
+.back-button {
+  background-color: #E83A47;
+  color: #ffffff;
+  padding: 0.5em 2em;
+  border: 1px solid #8b232b;
+  cursor: grab;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1.5em;
+  border-radius: 5px;
+  gap: 1em;
+  margin: 1em;
+}
+
+.post-button {
+  background-color: #F2BA1D;
+  color: #ffffff;
+  border: 1px solid #daa71a;
+  padding: 0.5em 2em;
+  width: 65%;
+  cursor: grab;
+  font-size: 1em;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+textarea {
+  resize: none;
+}
+
+input,
+textarea {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  padding: 0.5em;
+  font-size: 1em;
+  color: #000000;
+}
+
+label {
+  color: #ffffff;
+  font-size: 1.25em;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+}
+
+.counter {
+  color: #F2BA1D;
+  font-size: 15px;
+}
+
+.counter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 10px;
 }
 
 footer {
@@ -103,7 +200,7 @@ footer {
 
 .fa-github {
   font-size: 20px;
-  color: #545454;
+  color: #E83A47;
   transition: transform 0.3s ease-in-out;
 }
 
