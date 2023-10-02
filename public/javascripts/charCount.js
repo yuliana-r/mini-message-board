@@ -1,19 +1,19 @@
 const textarea = document.getElementById("message");
 const charCount = document.getElementById("charCount");
 
-const maxCount = 250;
+const maxCount = 150;
 
-function updateCharCount() {
+textarea.addEventListener("input", function updateCharCount() {
     const currCount = textarea.value.length;
     charCount.textContent = currCount;
 
-    if (currCount > maxCount) {
+    if (currCount >= maxCount) {
         charCount.style.color = "#E83A47";
-        textarea.value = textarea.value.slice(0, maxCount);
+        return;
     } else {
         charCount.style.color = "#F2BA1D";
     }
-}
+})
 
 module.exports = {
     updateCharCount

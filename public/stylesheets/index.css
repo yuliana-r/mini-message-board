@@ -83,7 +83,7 @@ main {
   border-radius: 50px;
   padding: 0.5em;
   font-weight: 700;
-  font-size: 2em;
+  font-size: 1.75em;
   font-family: 'Montserrat', sans-serif;
   margin: 10px;
   cursor: grab;
@@ -93,7 +93,7 @@ main {
   gap: 5px;
   letter-spacing: 2px;
   position: fixed;
-  bottom: 40px;
+  bottom: 50px;
   right: 0;
 }
 
@@ -204,11 +204,12 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2em;
-  padding: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
   width: 90%;
   flex-wrap: wrap;
   gap: 2em;
+  padding-top: 2em;
 }
 
 .message {
@@ -240,7 +241,6 @@ label {
   word-break: break-word;
   color: #E83A47;
   font-weight: 600;
-
 }
 
 .message-body {
@@ -269,6 +269,7 @@ footer {
   font-family: 'Sacramento', cursive;
   font-size: 2em;
   gap: 10px;
+  padding-bottom: 5px;
   border-top: 1px solid #000000;
 }
 
