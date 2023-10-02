@@ -249,6 +249,9 @@ label {
   color: #131313;
   font-weight: 500;
   word-break: break-word;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .message-date {

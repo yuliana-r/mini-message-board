@@ -3,7 +3,7 @@ var router = express.Router();
 
 const messages = [
   {
-    text: "We were on a break!!!",
+    text: "WE WERE ON A BREAK!!!",
     user: "Ross",
     added: new Date(Date.parse("02/13/1997"))
   },
@@ -13,8 +13,8 @@ const messages = [
     added: new Date(Date.parse("04/23/2023"))
   },
   {
-    text: "We have to remember what's important in life: friends, waffles and work. Or waffles, friends, work. But work has to come third.",
-    user: "Leslie Knope",
+    text: "It gets easier. Every day it gets a little easier. But you gotta do it every day. That's the hard part.",
+    user: "BoJack H.",
     added: new Date(Date.parse("10/01/2023"))
   }
 ]
