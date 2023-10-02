@@ -186,13 +186,14 @@ label {
 .counter {
   color: #F2BA1D;
   font-size: 15px;
+  width: 80px;
 }
 
 .counter-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  width: 75%;
+  width: 100%;
   flex-wrap: wrap;
   text-align: center;
   gap: 10px;
