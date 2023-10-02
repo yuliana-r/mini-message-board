@@ -157,6 +157,7 @@ form {
   align-items: center;
   gap: 0.5em;
   width: 100%;
+  margin-bottom: 2em;
 }
 
 textarea {
@@ -236,7 +237,7 @@ label {
 .message-header {
   font-size: 1.25em;
   align-self: flex-start;
-  word-break: break-all;
+  word-break: break-word;
   color: #E83A47;
   font-weight: 600;
 
@@ -246,6 +247,7 @@ label {
   text-align: justify;
   color: #131313;
   font-weight: 500;
+  word-break: break-word;
 }
 
 .message-date {

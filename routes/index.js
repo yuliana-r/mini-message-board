@@ -3,19 +3,19 @@ var router = express.Router();
 
 const messages = [
   {
-    text: "I'm reading a book on anti-gravity. It's impossible to put down!",
-    user: "PunMaster123",
-    added: new Date()
+    text: "We were on a break!!!",
+    user: "Ross",
+    added: new Date(Date.parse("02/13/1997"))
   },
   {
-    text: "Why did the cat sit on the computer? Because it wanted to keep an eye on the mouse! 😺🖱️",
-    user: "PurrfectHacker",
-    added: new Date()
+    text: "What matters isn't if people are good or bad. What matters is, if they're trying to be better today than they were yesterday.",
+    user: "Michael, TGP",
+    added: new Date(Date.parse("04/23/2023"))
   },
   {
-    text: "I told my wife she was drawing her eyebrows too high. She looked surprised!",
-    user: "BrowArtist",
-    added: new Date()
+    text: "We have to remember what's important in life: friends, waffles and work. Or waffles, friends, work. But work has to come third.",
+    user: "Leslie Knope",
+    added: new Date(Date.parse("10/01/2023"))
   }
 ]
 

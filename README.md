@@ -7,7 +7,7 @@ This project demonstrates use of the ExpressJS framework.
 
 ## Preview
 
-<!-- [![Mini message board](./public/images/demo.png)](https://tiny-talkies.netlify.app/) -->
+[![Mini message board](./public/images/demo.png)](https://tiny-talkies.onrender.com/)
 
 ## Media & assets credits:
 
