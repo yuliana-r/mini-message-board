@@ -13,6 +13,7 @@ textarea.addEventListener("input", function updateCharCount() {
     } else {
         charCount.style.color = "#F2BA1D";
     }
+
 })
 
 module.exports = {
