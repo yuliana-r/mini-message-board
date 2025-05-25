@@ -61,7 +61,7 @@ header {
 }
 
 .fa-comments {
-  color: #F2BA1D;
+  color: #f2ba1d;
 }
 
 /* Main */
@@ -77,7 +77,7 @@ main {
 /* Buttons */
 
 .add-button {
-  background-color: #E83A47;
+  background-color: #e83a47;
   color: #ffffff;
   border: 1px solid #8b232b;
   border-radius: 50px;
@@ -111,7 +111,7 @@ main {
 }
 
 .back-button {
-  background-color: #E83A47;
+  background-color: #e83a47;
   color: #ffffff;
   padding: 0.5em 2em;
   border: 1px solid #8b232b;
@@ -121,7 +121,7 @@ main {
 }
 
 .post-button {
-  background-color: #F2BA1D;
+  background-color: #f2ba1d;
   color: #ffffff;
   border: 1px solid #daa71a;
   padding: 0.5em 2em;
@@ -184,7 +184,7 @@ label {
 }
 
 .counter {
-  color: #F2BA1D;
+  color: #f2ba1d;
   font-size: 15px;
   width: 75px;
 }
@@ -240,7 +240,7 @@ label {
   font-size: 1.25em;
   align-self: flex-start;
   word-break: break-word;
-  color: #E83A47;
+  color: #e83a47;
   font-weight: 600;
 }
 
@@ -279,7 +279,7 @@ footer {
 
 .fa-github {
   font-size: 20px;
-  color: #F2BA1D;
+  color: #f2ba1d;
   transition: transform 0.3s ease-in-out;
 }
 
