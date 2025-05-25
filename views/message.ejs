@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<%- include('head') %>
+
+<body>
+  <%- include('header') %>
+  <main class="view-message">
+
+    <div class="message">
+      <p class="message-header"><%= message.user %> <span class="cursive-span">said...</span></p>
+      <p class="message-body"><%= message.text %></p>
+      <p class="message-date"><%= message.added.toDateString() %></p>
+    </div>
+
+  </main>
+
+  <%- include('footer') %>
+
+</body>
+
+</html>

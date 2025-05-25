@@ -1,19 +1,10 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <title><%= title %></title>
-  <link rel='stylesheet' href='/stylesheets/index.css' />
-  <link rel="icon" href="/images/icon.ico">
-  <script src="https://kit.fontawesome.com/f5ed9082ee.js" crossorigin="anonymous"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+<%- include('head') %>
 
 <body>
-  <header>
-    <h1 class="display header-title"><i class="fa-solid fa-comments"></i> <%= title %></h1>
-    <p class="handwritten header-message">leave a message...</p>
-  </header>
+  <%- include('header') %>
   <main>
     <div class="messages-container">
       <% messages.forEach(function(message) { %>
@@ -36,10 +27,8 @@
       </button>
     </a>
   </main>
-  <footer><a href="https://github.com/yuliana-r/mini-message-board" target="_blank">
-      <i class="fab fa-github" aria-hidden="true"></i></a>
-    <p> yuliana-r</p>
-  </footer>
+
+  <%- include('footer') %>
 
 </body>
 
