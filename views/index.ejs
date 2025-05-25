@@ -18,9 +18,13 @@
     <div class="messages-container">
       <% messages.forEach(function(message) { %>
       <div class="message">
-        <p class="message-header"><%= message.user %> <span class="cursive-span">said...</span></p>
+        <div class="message-top">
+          <p class="message-header"><%= message.user %> <span class="cursive-span">said...</span></p>
+          <a href=<%= `/messages/${message.id}` %> target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+
         <p class="message-body"><%= message.text %></p>
-        <a href=<%= `/messages/${message.id}` %>>click me</a>
+
         <p class="message-date"><%= message.added.toDateString() %></p>
       </div>
 

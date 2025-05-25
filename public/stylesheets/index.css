@@ -229,6 +229,13 @@ label {
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.2), 0 4px 6px -4px rgb(0 0 0 / 0.2);
 }
 
+.message-top {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .cursive-span {
   font-family: 'Sacramento', cursive;
   font-size: 1.75em;
@@ -259,6 +266,16 @@ label {
   color: #5d5d5d;
   font-weight: 400;
   font-style: italic;
+}
+
+.fa-arrow-up-right-from-square {
+  color: #e83a47;
+  font-size: 15px;
+}
+
+.fa-arrow-up-right-from-square:hover {
+  scale: 1.05;
+  filter: saturate(1.25);
 }
 
 /* Footer */
