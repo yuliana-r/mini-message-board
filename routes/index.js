@@ -32,9 +32,6 @@ router.get('/messages/:messageId', function (req, res, next) {
     title: 'tiny talkies',
     message: messages[messageId],
   });
-  // res.send(
-  //   `Message id: ${messageId}; message: ${JSON.stringify(messages[messageId])}`,
-  // );
 });
 
 router.get('/new', function (req, res, next) {

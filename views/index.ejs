@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 
-<%- include('head') %>
+<%- include('./partials/head') %>
 
 <body>
-  <%- include('header') %>
+  <%- include('./partials/header') %>
   <main>
     <div class="messages-container">
       <% messages.forEach(function(message) { %>
@@ -28,7 +28,7 @@
     </a>
   </main>
 
-  <%- include('footer') %>
+  <%- include('./partials/footer') %>
 
 </body>
 
