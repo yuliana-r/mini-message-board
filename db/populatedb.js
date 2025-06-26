@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS messages (
   id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
   message TEXT NOT NULL,
   author VARCHAR ( 255 ) NOT NULL,
-  added DATE NOT NULL
+  added DATE NOT NULL DEFAULT CURRENT_DATE
 );
 
 INSERT INTO messages (message, author, added)

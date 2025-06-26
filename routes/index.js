@@ -1,5 +1,5 @@
 let express = require('express');
-const { getAllMessages } = require('../db/queries');
+const { getAllMessages, insertMessage } = require('../db/queries');
 let router = express.Router();
 
 router.get('/', async (req, res) => {
@@ -17,7 +17,15 @@ router.get('/new', (req, res) => {
 
 // get /messages/:messageId
 
-// post /new
+router.post('/new', async (req, res) => {
+  const { name, message } = req.body;
+  try {
+    await insertMessage(message, name);
+    res.redirect('/');
+  } catch (error) {
+    res.status(500).send('Failed to insert cat');
+  }
+});
 
 // const messages = [
 //   {
