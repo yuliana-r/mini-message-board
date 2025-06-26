@@ -10,11 +10,11 @@
       <% messages.forEach(function(message) { %>
       <div class="message">
         <div class="message-top">
-          <p class="message-header"><%= message.user %> <span class="cursive-span">said...</span></p>
+          <p class="message-header"><%= message.author %> <span class="cursive-span">said...</span></p>
           <a href=<%= `/messages/${message.id}` %> target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div>
 
-        <p class="message-body"><%= message.text %></p>
+        <p class="message-body"><%= message.message %></p>
 
         <p class="message-date"><%= message.added.toDateString() %></p>
       </div>
