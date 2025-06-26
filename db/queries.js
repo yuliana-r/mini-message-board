@@ -12,9 +12,15 @@ async function insertMessage(message, author) {
   ]);
 }
 
-//getMessageById
+async function getMessageById(messageId) {
+  const { rows } = await pool.query('SELECT * FROM messages WHERE id = $1', [
+    messageId,
+  ]);
+  return rows[0];
+}
 
 module.exports = {
   getAllMessages,
   insertMessage,
+  getMessageById,
 };
