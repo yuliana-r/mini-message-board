@@ -25,7 +25,7 @@ router.post('/new', async (req, res) => {
     res.redirect('/');
   } catch (error) {
     console.error('Insert error:', error);
-    res.status(500).send('Failed to insert message');
+    res.status(500).send('Failed to insert cat');
   }
 });
 
@@ -69,3 +69,5 @@ router.post('/new', async (req, res) => {
 //   });
 //   res.redirect('/');
 // });
+
+module.exports = router;
