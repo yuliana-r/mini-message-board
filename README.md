@@ -1,5 +1,6 @@
 # Mini message board
-## Introduction 
+
+## Introduction
 
 This project is a simple message board app that allows users to post messages on the board.
 
@@ -7,7 +8,7 @@ This project demonstrates use of the ExpressJS framework.
 
 ## Preview
 
-[![Mini message board](./public/images/demo.png)](https://tiny-talkies.onrender.com/)
+[![Mini message board](./public/images/demo.png)](https://tiny-talkies.up.railway.app/)
 
 ## Media & assets credits:
 
