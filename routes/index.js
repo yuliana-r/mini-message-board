@@ -28,7 +28,7 @@ router.get('/messages/:messageId', async (req, res) => {
       message: message,
     });
   } catch (error) {
-    console.error('Error finding message:', err);
+    console.error('Error finding message:', error);
     res.status(500).send('Failed to find message');
   }
 });
