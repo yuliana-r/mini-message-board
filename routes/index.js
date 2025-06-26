@@ -1,5 +1,9 @@
 let express = require('express');
-const { getAllMessages, insertMessage } = require('../db/queries');
+const {
+  getAllMessages,
+  insertMessage,
+  getMessageById,
+} = require('../db/queries');
 let router = express.Router();
 
 router.get('/', async (req, res) => {
@@ -17,10 +21,11 @@ router.get('/new', (req, res) => {
 });
 
 router.get('/messages/:messageId', async (req, res) => {
-  const messageId = Number(req.params.messageId);
-  if (isNaN(messageId)) {
-    return res.status(400).send('Invalid message ID');
-  }
+  // const messageId = Number(req.params.messageId);
+  // if (isNaN(messageId)) {
+  //   return res.status(400).send('Invalid message ID');
+  // }
+  const { messageId } = req.params;
 
   try {
     const message = await getMessageById(messageId);
@@ -44,7 +49,7 @@ router.post('/new', async (req, res) => {
     res.redirect('/');
   } catch (error) {
     console.error('Insert error:', error);
-    res.status(500).send('Failed to insert cat');
+    res.status(500).send('Failed to insert messages');
   }
 });
 
