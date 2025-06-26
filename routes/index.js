@@ -7,6 +7,7 @@ router.get('/', async (req, res) => {
     const messages = await getAllMessages();
     res.render('index', { title: 'tiny talkies', messages: messages });
   } catch (error) {
+    console.error('Error:', error);
     res.status(500).send('Internal Server Error');
   }
 });
@@ -23,7 +24,8 @@ router.post('/new', async (req, res) => {
     await insertMessage(message, name);
     res.redirect('/');
   } catch (error) {
-    res.status(500).send('Failed to insert cat');
+    console.error('Insert error:', error);
+    res.status(500).send('Failed to insert message');
   }
 });
 
@@ -67,5 +69,3 @@ router.post('/new', async (req, res) => {
 //   });
 //   res.redirect('/');
 // });
-
-module.exports = router;
