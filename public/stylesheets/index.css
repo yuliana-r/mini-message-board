@@ -97,6 +97,13 @@ main {
   right: 0;
 }
 
+.buttons-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
 .add-button:hover,
 .back-button:hover,
 .post-button:hover {
@@ -110,29 +117,24 @@ main {
   border-radius: 5px;
 }
 
+.back-button,
+.post-button {
+  cursor: grab;
+  font-size: 1em;
+  padding: 0.5em 2.5em;
+  font-weight: 600;
+}
+
 .back-button {
   background-color: #e83a47;
   color: #ffffff;
-  padding: 0.5em 2em;
   border: 1px solid #8b232b;
-  cursor: grab;
-  font-size: 1em;
-  font-weight: 600;
 }
 
 .post-button {
   background-color: #f2ba1d;
   color: #ffffff;
   border: 1px solid #daa71a;
-  padding: 0.5em 2em;
-  width: 65%;
-  cursor: grab;
-  font-size: 1em;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
 }
 
 /* Form */
