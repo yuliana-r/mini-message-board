@@ -17,7 +17,11 @@ router.get('/new', (req, res) => {
 });
 
 router.get('/messages/:messageId', async (req, res) => {
-  const { messageId } = req.params;
+  const messageId = Number(req.params.messageId);
+  if (isNaN(messageId)) {
+    return res.status(400).send('Invalid message ID');
+  }
+
   try {
     const message = await getMessageById(messageId);
     if (!message) {
