@@ -119,7 +119,7 @@ main {
 
 .back-button,
 .post-button {
-  cursor: grab;
+  cursor: pointer;
   font-size: 1em;
   padding: 0.5em 2.5em;
   font-weight: 600;
