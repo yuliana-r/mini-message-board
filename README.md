@@ -4,7 +4,7 @@
 
 This project is a simple message board app that allows users to post messages on the board.
 
-This project demonstrates use of the ExpressJS framework.
+This project demonstrates use of ExpressJS and PostgreSQL.
 
 ## Preview
 
