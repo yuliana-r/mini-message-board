@@ -1,10 +1,22 @@
 let express = require('express');
+const { body, validationResult } = require('express-validator');
 const {
   getAllMessages,
   insertMessage,
   getMessageById,
 } = require('../db/queries');
 let router = express.Router();
+
+const validateMessage = [
+  body('name')
+    .trim()
+    .isLength({ min: 1, max: 20 })
+    .withMessage('Name must be between 1 and 20 characters'),
+  body('message')
+    .trim()
+    .isLength({ min: 1, max: 150 })
+    .withMessage('Message cannot be empty'),
+];
 
 router.get('/', async (req, res) => {
   try {
@@ -38,8 +50,19 @@ router.get('/messages/:messageId', async (req, res) => {
   }
 });
 
-router.post('/new', async (req, res) => {
+router.post('/new', validateMessage, async (req, res) => {
+  const errors = validationResult(req);
+
+  if (!errors.isEmpty()) {
+    return res.status(400).render('form', {
+      title: 'tiny talkies',
+      errors: errors.array(),
+      data: req.body,
+    });
+  }
+
   const { name, message } = req.body;
+
   try {
     await insertMessage(message, name);
     res.redirect('/');

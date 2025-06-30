@@ -67,7 +67,7 @@ header {
 /* Main */
 
 main {
-  margin-top: 150px;
+  padding-top: 150px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -200,6 +200,15 @@ label {
   flex-wrap: wrap;
   text-align: center;
   gap: 20px;
+}
+
+.validation-error {
+  border-bottom: 2px #e83a47 dashed;
+  color: #fff;
+  list-style-type: square;
+  margin: 0.5em 0;
+  padding-bottom: 0.2em;
+  width: fit-content;
 }
 
 /* Messages display */
