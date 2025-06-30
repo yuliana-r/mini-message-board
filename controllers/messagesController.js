@@ -27,7 +27,7 @@ exports.getAllMessages = async (req, res) => {
 };
 
 exports.showCreateMessageForm = (req, res) => {
-  res.render('form', { title: 'tiny talkies | new message' });
+  res.render('form', { title: 'tiny talkies' });
 };
 
 exports.getMessageById = async (req, res) => {
@@ -39,7 +39,7 @@ exports.getMessageById = async (req, res) => {
       return res.status(404).send('Message not found');
     }
     res.render('message', {
-      title: 'tiny talkies | view message',
+      title: 'tiny talkies',
       message,
     });
   } catch (error) {
@@ -54,7 +54,7 @@ exports.createMessage = [
 
     if (!errors.isEmpty()) {
       return res.status(400).render('form', {
-        title: 'tiny talkies | new message',
+        title: 'tiny talkies',
         errors: errors.array(),
         data: req.body,
       });
