@@ -2,7 +2,7 @@ let express = require('express');
 let path = require('path');
 let app = express();
 require('dotenv').config();
-const indexRouter = require('./routes/index');
+const messagesRouter = require('./routes/messagesRouter');
 const port = process.env.PORT || 3000;
 
 app.use(express.json());
@@ -14,7 +14,7 @@ app.set('view engine', 'ejs');
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
+app.use('/', messagesRouter);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
